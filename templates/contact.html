@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    {% include 'dependencies.html' %}
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+            alert('Your message has been submitted!');
+            setTimeout(function() {
+                window.location.href = '/';
+            }, 100);
+        }
+
+    </script>
+</head>
+<body>
+    {% include 'header.html' %}
+    <div id="page-container">
+        <div id="content">
+            <div class="container contact-me">
+    <h1 class="contact-heading text-center">Contact Me</h1>
+    <div class="row">
+        <div class="col-md-6 d-none d-md-block">
+            <img class="contact-image" src="/static/chris-ried-ieic5Tq8YMk-unsplash.jpg" alt="Contact Image">
+        </div>
+        <div class="col-12 col-md-6">
+            <img class="contact-image contact-image-mobile d-md-none" src="/static/chris-ried-ieic5Tq8YMk-unsplash.jpg" alt="Contact Image">
+            <form action="/contact/new" method="post" onsubmit="submitForm(event)">
+                <div class="mb-2">
+                    <label>Name</label><br>
+                    <input class="form-control" type="text" name="username" placeholder="Enter your name here....."><br>
+                </div>
+                <div class="mb-2">
+                    <label>Email</label><br>
+                    <input class="form-control" type="email" name="useremail" placeholder="Enter your email here....."><br>
+                </div>
+                <div class="mb-2">
+                    <label>Message</label><br>
+                    <textarea class="form-control" name="usermessage" placeholder="Start typing...."></textarea>
+                </div>
+                <input class="btn btn-primary" type="submit">
+            </form>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    {% include 'footer.html' %}
+</body>
+</html>

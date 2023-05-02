@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First blog</title>
+    {% include 'dependencies.html' %}
+</head>
+<body>
+{% include 'header.html' %}
+    <div id="page-container">
+        <div id="content">
+            <div class="container post-page">
+    <h1 class="post-maintitle">Why i choose to learn web development in flask</h1>
+    <p class="post-date">Posted on 24/03/2023</p>
+     <div class="post-image">
+        <img src="/static/chris-ried-ieic5Tq8YMk-unsplash.jpg" alt="Computer screen with code" class="img-fluid">
+    </div>
+    <div class="post-text">
+        <p>
+          Vivamus posuere nulla eget orci posuere elementum. Aliquam erat volutpat. Donec sed fermentum massa, id tincidunt enim. Integer dictum lorem ut elit pellentesque ultricies. Sed sed ligula sed lectus imperdiet efficitur. Proin ut luctus felis. Pellentesque ullamcorper, velit vel finibus sagittis, urna enim efficitur nulla, non ullamcorper ipsum mi quis quam. Fusce at neque ut magna sollicitudin bibendum in eget massa. Suspendisse non imperdiet enim. Morbi et malesuada ipsum, quis ultrices quam. Sed eu sapien euismod, molestie ex in, viverra nisl. Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc id bibendum quam. Donec pharetra ac lorem eget elementum. Sed pulvinar fermentum velit, in venenatis metus volutpat sit amet. Sed quis nunc eu orci suscipit volutpat.
+        </p>
+        <p>Duis maximus nibh a quam euismod rhoncus. Duis at purus feugiat, faucibus lacus id, consequat libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi euismod ipsum et orci consectetur scelerisque. Morbi volutpat euismod tellus vel laoreet
+        </p>
+    </div>
+    {% include 'comments.html' %}
+    </p>
+    </div>
+    </div>
+    </div>
+    {% include 'footer.html' %}
+</body>
+</html>
